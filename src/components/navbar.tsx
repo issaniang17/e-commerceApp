@@ -1,9 +1,8 @@
-/* eslint-disable prefer-const */
 import { Link, NavLink } from "react-router-dom";
 import { navitems } from "../constante/constante";
 import logo from "../assets/logo.png";
-import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [mobileMenu, setmobileMenu] = useState(false);
