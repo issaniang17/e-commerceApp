@@ -13,7 +13,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className={`flex justify-between items-center p-8 px-2 lg:px-4 relative  w-full bg-white z-100 transition-transform duration-100 `}>
+    <nav className={`flex justify-between items-center p-8 px-2 lg:px-4 relative  w-full bg-white z-100 transition-transform duration-100 mb-10`}>
       <Link to="/" onClick={()=>setmobileMenu(false)}>
         <img src={logo} alt="logo-profile" width="150px" height="150px" />
       </Link>
