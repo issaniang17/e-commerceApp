@@ -8,7 +8,7 @@ const Card = ({image, nom, prix, feature, lien=''}:CardProps) => {
     <Link to={lien} className=" shrink-0 hover:scale-102 w-full transition duration-200 ease-in relative">
         {feature && <div className="absolute top-2 left-4 rounded-full border px-2 py-1 text-gray-500">{feature}</div>}
         <div className="h-[80%]">
-            <img src={image} alt={nom} className="rounded-2xl h-full"/>
+            <img src={image} alt={nom} className="rounded-2xl h-full w-full"/>
         </div>
         <div className="flex justify-between items-center my-4 text-lg">
             <h3>{nom}</h3>
