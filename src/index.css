@@ -2,6 +2,17 @@
 
 @import "tailwindcss";
 
+@theme {
+    --animate-zoomover: aniTrans 0.3s ease-in both;
+    @keyframes aniTrans{
+    from {
+        transform: scale(1.08);
+    }to{
+        transform: scale(1);
+    }
+}
+}
+
 :root{
   font-family: 'Poppins', sans-serif;
 }

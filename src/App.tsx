@@ -7,6 +7,12 @@ import Blog from "./pages/blog";
 import Faq from "./pages/faq";
 import Contact from "./pages/contact";
 import Footer from "./components/footer";
+import AllProducts from "./components/allProducts";
+import HeadphonesProducts from "./components/headphonesProducts";
+import WatchesProduct from "./components/watchesProduct";
+import PhonesProduct from "./components/phonesProduct";
+import DisplayProduct from "./components/displayProduct";
+import BuyProduct from "./pages/buyProduct";
 
 const App = () => {
   return (
@@ -17,7 +23,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop/>}>
-
+            <Route index element={<AllProducts/>}/>
+            <Route path="headphones" element={<HeadphonesProducts/>}/>
+            <Route path="watches" element={<WatchesProduct/>}/>
+            <Route path="phones" element={<PhonesProduct/>}/>
+            <Route path="displays" element={<DisplayProduct/>}/>
+            <Route path=":productDetails" element={<BuyProduct/>}/>
           </Route>
           <Route path="/about" element={<About/>}/>
           <Route path="/blog" element={<Blog/>}>
